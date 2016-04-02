@@ -19,17 +19,17 @@
   service: name=chronyd state=started enabled=yes
   tags: packages
 
-# enable Fedora 22 ARM repository providing the docker package
-- name: Install Fedora 22 repository
+# enable Fedora 23 ARM repository providing the docker package
+- name: Install Fedora 23 repository
   template: src=Fedora-Everything.repo dest=/etc/yum.repos.d/Fedora-Everything.repo
   tags: packages
 
-- name: Import primary Fedora 22 GPG keys
-  rpm_key: state=present key=https://getfedora.org/static/8E1431D5.txt validate_certs=no
+- name: Import primary Fedora 23 GPG keys
+  rpm_key: state=present key=https://getfedora.org/static/34EC9CBA.txt validate_certs=no
   tags: packages
 
-- name: Import secondary Fedora 22 GPG keys
-  rpm_key: state=present key=https://getfedora.org/static/A29CB19C.txt validate_certs=no
+- name: Import secondary Fedora 23 GPG keys
+  rpm_key: state=present key=https://getfedora.org/static/873529B8.txt validate_certs=no
   tags: packages
 
 # install docker

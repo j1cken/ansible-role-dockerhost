@@ -5,15 +5,13 @@
 # geographically close to the client.  You should use this for CentOS updates
 # unless you are manually picking other mirrors.
 #
-# If the mirrorlist= does not work for you, as a fall back you can try the 
+# If the mirrorlist= does not work for you, as a fall back you can try the
 # remarked out baseurl= line instead.
 #
 #
 
 [fedora]
-name=Fedora-22 - Everything
-baseurl=https://download.fedoraproject.org/pub/fedora/linux/releases/22/Everything/armhfp/os
+name=Fedora-23 - Everything
+baseurl=https://download.fedoraproject.org/pub/fedora/linux/releases/23/Everything/armhfp/os
 gpgcheck=1
 enabled=0
-
-
