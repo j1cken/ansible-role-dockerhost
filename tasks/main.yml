@@ -45,15 +45,15 @@
   tags: packages
 
 # resize root partition
-- name: Resize / partition
-  command: /usr/bin/touch /.rootfs-repartition
-  tags: partition
+# - name: Resize / partition
+#   command: /usr/bin/touch /.rootfs-repartition
+#   tags: partition
 
 # reboot system to make resized partition available
-- name: Reboot RedHat/CentOS 7 systems
-  shell: sleep 5 && shutdown -r now
-  when: (ansible_distribution == "RedHat" and ansible_distribution_major_version == "7")
-  async: 1
-  poll: 0
-  tags: partition
-  ignore_errors: yes
+# - name: Reboot RedHat/CentOS 7 systems
+#   shell: sleep 5 && shutdown -r now
+#   when: (ansible_distribution == "RedHat" and ansible_distribution_major_version == "7")
+#   async: 1
+#   poll: 0
+#   tags: partition
+#   ignore_errors: yes
